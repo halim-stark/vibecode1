@@ -150,4 +150,35 @@
 
 # # buat dari awal lagi
 
+list_soal = ["Apa ibu kota Indonesia?","Berapa hasil dari 5 + 3?","Manakah yang merupakan tipe data untuk menyimpan beberapa item secara berurutan di Python?","Function di Python dibuat menggunakan keyword apa?","Index pertama sebuah Python list adalah?"]
+list_abcd = ["A","B","C","D"]
+jawaban1 = ["Bandung", "Jakarta", "Surabaya", "Medan"]
+jawaban2 = ["6", "7", "8", "9"]
+jawaban3 = ["list", "int", "bool", "float"]
+jawaban4 = ["fungtion", "func", "def", "make"]
+jawaban5 = ["0", "1", "-1", "2"]
+all_jawaban = [jawaban1,jawaban2,jawaban3,jawaban4,jawaban5]
+score = 0
+jawaban_benar = ["B","C","A","C","A"]
 
+# pemutar soal dan jawaban
+def soal(list_soal,jawaban,score,hasil_jawaban):
+    print(list_soal)
+    for index, j in enumerate(jawaban):
+        print(list_abcd[index], j)
+    user = input("Pilih jawaban anda: ").upper()
+    if user == hasil_jawaban:
+        score += 1
+        print(f"anda mendapatkan score {score}")
+        return score
+
+    else:
+        print("Salah")
+
+
+for i in range(5):
+    list_soal[i]
+    all_jawaban[i]
+    jawaban_benar[i]
+    score = soal(list_soal[i],all_jawaban[i],score,jawaban_benar[i])
+    
