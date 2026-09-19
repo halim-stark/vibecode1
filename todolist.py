@@ -111,7 +111,6 @@ def delete_one_contact(contacts):
             print("Kamu memasukan huruf invalid")
             delete_contact(contacts)
             return
-
         user_range = user_int - 1
         user_len = len(contacts)
         if user_len >= user_int and user_int > 0:
